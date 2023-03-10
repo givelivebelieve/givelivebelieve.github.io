@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/text-guide.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <div class="hand">
+        <span id="big-hand2"
+          ><img src="./img/big-hand.png" id="big-hand"
+        /></span>
+        <span id="small-hand2"
+          ><img src="./img/small-hand.png" id="small-hand"
+        /></span>
+        <img src="./img/slogan.png" id="slogan" />
+      </div>
+    </section>
+
+    <section>
+      <h1 class="alice">Thank you</h1>
+      <div>
+        <p class="s-text noto-serif-tc">
+          非常感謝您的捐贈，歡迎將這個積累善意的機會分享給更多的人，讓更多人願意一起為世界創造生機，
+          <br />同時也相信生命會被給予延續的機會。
+        </p>
+        <div>
+          <a
+            href="http://www.twitter.com/share?url=http://rickymonster888.github.io"
+            ><img src="./img/twitter.png"
+          /></a>
+
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frickymonster888.github.io%2F&amp;src=sdkpreparse"
+            ><img src="./img/facebook.png"
+          /></a>
+          <a
+            href="https://social-plugins.line.me/lineit/share?url=https://rickymonster888.github.io"
+            ><img src="./img/line.png"
+          /></a>
+          <button id="address-link-button">
+            <img src="./img/link.png" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="address-link" class="">
+      <span id="address-closearea"></span>
+      <div>
+        <h4 class="noto-serif-tc">請複製下列連結</h4>
+        <input
+          type="text"
+          id="address-link-input"
+          value="https://rickymonster888.github.io"
+        />
+        <button onclick="copyUrl()">
+          <img src="./img/link.png" />Copy Link
+        </button>
+      </div>
+    </section>
+  </body>
+  <script>
+    function copyUrl() {
+      var Url = document.getElementById("address-link-input");
+      Url.select(); // 選擇物件
+      document.execCommand("Copy"); // 執行瀏覽器複製命令
+      alert("連結已複製到您的剪貼簿");
+    }
+
+    document
+      .getElementById("address-link-button")
+      .addEventListener("click", function () {
+        document.getElementById("address-link").classList.add("display-flex");
+      });
+
+    document
+      .getElementById("address-closearea")
+      .addEventListener("click", function () {
+        document
+          .getElementById("address-link")
+          .classList.remove("display-flex");
+      });
+  </script>
+</html>

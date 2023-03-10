@@ -1,0 +1,958 @@
+/*一些基本設定*/
+a {
+  text-decoration-line: none;
+}
+textarea::-webkit-scrollbar,
+::-webkit-scrollbar-corner {
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff6e;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffffa3;
+}
+
+.page-bg {
+  background: #e95514;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.single-page {
+  display: inline-flex;
+  width: calc(100vw - 350px);
+  height: 85vh;
+  padding: 7.5vh 175px;
+
+  background-image: url(../../img/bg-grid.png);
+  background-size: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.title-donation {
+  display: inline-flex;
+  width: 300px;
+  height: 100%;
+  align-items: center;
+}
+
+.precaution-content {
+  align-content: center;
+  justify-content: flex-end;
+  display: inline-flex;
+  width: calc(100% - 300px);
+
+  flex-wrap: wrap;
+}
+.precaution-content p {
+  display: block;
+  height: 70vh;
+  overflow: scroll;
+}
+.precaution-content div {
+  position: relative;
+  display: block;
+  width: 200px;
+  padding: 0 0 0 80px;
+}
+.precaution-content div {
+  display: block;
+  width: 200px;
+  margin-right: 200px;
+  margin-bottom: 10vh;
+}
+.nextpage-button {
+  position: absolute;
+  bottom: 17.5vh;
+  right: calc(175px + 218px);
+
+  background-color: transparent;
+  border: 0;
+}
+.nextpage-button:hover {
+  cursor: pointer;
+}
+.nextpage-1 {
+  right: calc(175px + 225px);
+}
+.nextpage-button img {
+  position: absolute;
+
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+.nextpage-button img:last-child:hover {
+  opacity: 0;
+}
+.back-button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.back-button img {
+  position: absolute;
+  width: 90px;
+
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+.back-button img:last-child:hover {
+  opacity: 0;
+}
+
+.next-page-js {
+  opacity: 0;
+  transition: cubic-bezier(0.5, 0.8, 0.5, 1) 800ms;
+}
+.next-page-js2 {
+  visibility: hidden;
+}
+
+.last-page-js {
+  opacity: 1;
+  transition: cubic-bezier(0.5, 0.8, 0.5, 1) 800ms;
+}
+
+.page1-precaution {
+  position: absolute;
+  z-index: 10;
+}
+.page2-input {
+  position: absolute;
+  top: 0px;
+  z-index: 5;
+}
+.page3-input {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+}
+
+.input-content {
+  display: inline-flex;
+  width: calc(100% - 350px);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputs-left {
+  display: inline-flex;
+  width: 40%;
+  height: 60%;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.inputs-right {
+  display: inline-flex;
+  width: 55%;
+  height: 60%;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.input-content div div {
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  justify-content: center;
+  width: 100%;
+}
+#checkbox-input {
+  height: 15vh;
+  display: inline-flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  transform: translateY(calc(12px + 7.5px));
+}
+#checkbox-input input[type="checkbox"] {
+  display: none;
+}
+
+#checkbox-input input[type="checkbox"] + span {
+  display: inline-block;
+  padding-left: 50px;
+  line-height: 22px; /*控制checkbox大小*/
+  background: url(../../img/checkbox.png) no-repeat left top;
+  user-select: none;
+  background-size: contain;
+}
+#checkbox-input input[type="checkbox"]:checked + span {
+  background: url(../../img/checkbox-check.png) no-repeat left top;
+  background-size: contain;
+}
+
+.choose-right span a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+/*input樣式*/
+.input-content input[type="text"],
+.input-content input[type="date"],
+.input-content input[type="email"] {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+
+  font-size: 20px;
+  font-family: "Noto serif TC";
+  letter-spacing: 0.05em;
+
+  width: calc(100% - 40px);
+  height: 2.5vh;
+  padding: 1vh 20px;
+  margin-top: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background: url(../../img/calender-icon.png);
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.input-content input[type="checkbox"] {
+  display: inline-block;
+  background-color: transparent;
+  border: solid 1px #ffffff;
+}
+
+/*第三頁-選擇器官*/
+.choose-content {
+  display: flex;
+  width: calc(100% - 350px);
+  height: 85vh;
+
+  align-items: center;
+}
+.choose-left {
+  width: calc(100% - 600px);
+  height: 70vh;
+}
+.choose-left > p {
+  height: 15%;
+}
+.choose-left > div {
+  display: flex;
+  width: 100%;
+  height: 85%;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+.choose-left > div > div {
+  width: 140px;
+  height: 97%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.choose-left > div > div > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.choose-left div div p {
+  line-height: 0;
+  margin-top: 3vh;
+}
+
+/*第三頁icons*/
+.choose-content div div div {
+  position: relative;
+}
+
+.icon-solid {
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+}
+.icon-solid-appear {
+  opacity: 1 !important;
+}
+
+.icon-lung:hover .icon-solid,
+.icon-tendon:hover .icon-solid,
+.icon-box-bone:hover .icon-solid,
+.icon-blood:hover .icon-solid,
+.icon-kidney:hover .icon-solid,
+.icon-liver:hover .icon-solid,
+.icon-skin:hover .icon-solid,
+.icon-cornea:hover .icon-solid,
+.icon-trachea:hover .icon-solid,
+.icon-heart:hover .icon-solid,
+.icon-pancreas:hover .icon-solid,
+.icon-smallin:hover .icon-solid {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+
+.icon-lung:active .icon-solid,
+.icon-tendon:active .icon-solid,
+.icon-box-bone:active .icon-solid,
+.icon-blood:active .icon-solid,
+.icon-kidney:active .icon-solid,
+.icon-liver:active .icon-solid,
+.icon-skin:active .icon-solid,
+.icon-cornea:active .icon-solid,
+.icon-trachea:active .icon-solid,
+.icon-heart:active .icon-solid,
+.icon-pancreas:active .icon-solid,
+.icon-smallin:active .icon-solid {
+  opacity: 1;
+}
+
+.icon-box-bone .icon-solid {
+  top: 14%; /*因flex設定物件置底的跑位校正*/
+}
+
+.icon-line {
+  z-index: 3;
+}
+
+.icon-first img {
+  height: 50%;
+}
+.icon-first,
+.icon-box {
+  height: 27.5%;
+}
+.icon-box-bone {
+  height: 45%;
+}
+.icon-box-small {
+  height: 22.5%;
+}
+.icon-second img,
+.icon-smallin > div {
+  height: 60%;
+}
+.icon-smallin > div {
+  display: flex;
+  align-items: center;
+}
+.icon-smallin img {
+  height: 80%;
+}
+.icon-column-third img {
+  padding-left: 20px;
+}
+.icon-box-small img {
+  height: 50%;
+}
+.icon-skin img {
+  height: 75%;
+}
+.icon-box-bone {
+  justify-content: flex-end;
+}
+.icon-box-bone img {
+  height: 75%;
+  margin-left: 20px;
+}
+
+/*第三頁右邊*/
+.choose-right {
+  display: flex;
+  flex-shrink: 0;
+  width: 550px;
+  flex-direction: column;
+  margin-left: 50px;
+  height: 70vh;
+  justify-content: space-between;
+}
+.choose-right-up {
+  display: flex;
+  width: 100%;
+  height: 85%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.choose-right-text {
+  width: 100%;
+  height: 40%;
+}
+
+.choose-content textarea {
+  background-color: transparent;
+  border: solid 1px #ffffff;
+  color: #ffffff;
+  resize: none;
+
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  padding-bottom: 12.5vh;
+  margin-top: 15px;
+  text-align: start;
+  font-size: 20px;
+  font-family: "Noto serif TC";
+  letter-spacing: 0.05em;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: 1px solid #ffffff;
+}
+.choose-right #checkbox-input {
+  width: 100%;
+  height: 20%;
+  align-content: flex-start;
+}
+.choose-buttons {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  justify-content: space-between;
+}
+.choose-buttons button {
+  display: flex;
+  width: 250px;
+  height: 73px;
+  padding: 0 40px;
+  justify-content: space-between;
+
+  align-items: baseline;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#cancel-button {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+
+  transform: perspective(1px) translateZ(0);
+  transition: 0.4s;
+}
+#cancel-button h4 {
+  color: #ffffff;
+}
+#cancel-button:hover {
+  cursor: pointer;
+}
+#cancel-button::before {
+  background-color: #f9875f;
+  clip-path: inset(0 100% 0 0);
+  opacity: 1;
+  transition: 0.4s;
+}
+#cancel-button:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+}
+
+#donate-button {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+
+  transform: perspective(1px) translateZ(0);
+  transition: 0.4s;
+}
+#donate-button::before {
+  background-color: #9cdc6b;
+  clip-path: inset(0 100% 0 0);
+  opacity: 1;
+  transition: 0.4s;
+}
+#donate-button:hover::before {
+  clip-path: inset(0 0 0 0);
+}
+#donate-button h4,
+#donate-button p {
+  color: #9cdc6b;
+}
+#donate-button:hover {
+  cursor: pointer;
+}
+#donate-button:hover h4,
+#donate-button:hover p {
+  color: #ffffff;
+}
+
+dialog {
+  z-index: 20;
+  padding: 0;
+}
+.dia-open {
+  display: block !important;
+}
+.dia-precaution {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-color: rgba(32, 32, 32, 0.3);
+}
+
+.dia-precaution-box {
+  z-index: 22;
+  display: none;
+  position: absolute;
+  width: 60vw;
+  height: 75vh;
+
+  left: calc(50vw - 30vw);
+  background: rgba(217, 217, 217, 0.22);
+  backdrop-filter: blur(49.686px);
+}
+.dia-comeout {
+  display: block !important;
+}
+
+.dia-precaution-box > p {
+  position: absolute;
+  width: 80%;
+  overflow: scroll;
+  height: 77.5%;
+  padding: 0 10%;
+  top: 13.5vh;
+  text-align: 0px;
+}
+#precaution-close {
+  display: flex;
+  width: 5%;
+  height: 5%;
+  top: 4vh;
+  left: 40px;
+}
+#precaution-close img:hover {
+  cursor: pointer;
+}
+
+.caution-open-animation {
+  display: block !important;
+  animation: cautionopen 500ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.caution-close-animation {
+  animation: cautionclose 500ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+.caution-close-animation2 {
+  transition-duration: 500ms !;
+  display: none;
+}
+.caution-open-position {
+  opacity: 0;
+  top: calc(62vh - 37.5vh);
+}
+.caution-close-position {
+  opacity: 1;
+  top: calc(50vh - 37.5vh);
+}
+
+@keyframes cautionopen {
+  0% {
+    opacity: 0;
+    top: calc(62vh - 37.5vh);
+  }
+  100% {
+    opacity: 1;
+    top: calc(50vh - 37.5vh);
+  }
+}
+
+@keyframes cautionclose {
+  0% {
+    opacity: 1;
+    top: calc(50vh - 37.5vh);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: calc(62vh - 37.5vh);
+  }
+}
+
+/*警告,確認窗大div設定*/
+.cancel-alert,
+.donate-alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: calc(35vw - 40px);
+  height: 200px;
+  padding: 20px;
+  background: rgba(217, 217, 217, 0.2);
+  backdrop-filter: blur(34.5207px);
+
+  position: absolute;
+  top: calc(50% - 100px);
+  left: 32.5vw;
+  z-index: 25;
+}
+/*兩個按鈕定位用小div設定*/
+.cancel-alert > div,
+.donate-alert > div {
+  display: flex;
+  width: 35%;
+  height: 15%;
+  justify-content: space-between;
+}
+/*利用文字padding拉百分比間距*/
+.cancel-alert p,
+.donate-alert p {
+  padding-bottom: 2vh;
+}
+/*警告,確認窗按鈕default*/
+.cancel-alert button,
+.donate-alert button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 40px;
+
+  background-color: transparent;
+  border: #ffffff 1px solid;
+}
+/*警告窗按鈕hover*/
+.cancel-alert button:hover {
+  background: #ffffff45;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+/*確認窗按鈕hover*/
+#donate-alert-yes:hover {
+  background-color: #9ddd6b;
+  border: #9ddd6b 1px solid;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+#donate-alert-no:hover {
+  background-color: #f9875f;
+  border: #f9875f 1px solid;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.dia-close {
+  display: none !important;
+}
+.alert-open {
+  animation: alertopen 1000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+.alert-close {
+  animation: alertclose 1000ms cubic-bezier(0.32, 1.275, 0.175, 0.885);
+  animation-fill-mode: forwards;
+}
+
+.mobile-donate-title {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  top: 3px;
+  display: none;
+}
+
+.mobile-donate-title h1 {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+}
+
+.mobile-donation-img {
+  display: none;
+}
+
+@keyframes alertopen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes alertclose {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1600px) {
+  .single-page {
+    width: calc(100vw - 300px);
+    padding: 7.5vh 150px;
+  }
+  .title-donation {
+    width: 200px;
+  }
+  .title-donation img {
+    height: 250px;
+  }
+  .precaution-content,
+  .input-content,
+  .choose-content {
+    width: calc(100% - 200px);
+  }
+  .nextpage-button img {
+    width: 175px;
+  }
+  .precaution-content p {
+    height: 60vh;
+  }
+  .nextpage-1 {
+    right: calc(175px + 151px);
+  }
+  .nextpage-2 {
+    right: calc(175px + 145px);
+  }
+
+  .input-content input[type="text"],
+  .input-content input[type="date"],
+  .input-content input[type="email"] {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .input-content p {
+    overflow-x: scroll;
+    width: 100%;
+    height: 40px;
+  }
+  .choose-left {
+    width: calc(100% - 375px);
+  }
+  .choose-right {
+    width: 325px;
+  }
+  .choose-buttons {
+    width: 105%;
+  }
+  .choose-buttons button {
+    width: 155px;
+    height: 50px;
+    padding: 0px 20px;
+  }
+  .choose-right span a {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .choose-content textarea {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page1-precaution,
+  .title-donation {
+    display: none;
+  }
+  .page-bg {
+    height: auto;
+  }
+  .single-page {
+    height: 1600px;
+  }
+  .input-content,
+  .choose-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .inputs-left,
+  .inputs-right,
+  #checkbox-input {
+    width: 100%;
+  }
+  .single-page {
+    background-image: none;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.8) -11.63%,
+      rgba(156, 220, 107, 0.7) 17.89%,
+      rgba(248, 134, 95, 0.5) 127.12%
+    );
+  }
+  .input-content input[type="text"],
+  .input-content input[type="date"],
+  .input-content input[type="email"] {
+    height: 20px;
+    padding: 1vh 15px;
+  }
+  .input-content div div,
+  #checkbox-input {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .nextpage-button {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    bottom: -40vw;
+    right: unset;
+
+    justify-content: center;
+  }
+  .choose-content {
+    height: auto;
+  }
+  .choose-left {
+    width: 100%;
+  }
+  .choose-right {
+    width: 100%;
+    margin: 0;
+    height: unset;
+  }
+  .choose-right-up {
+    display: block;
+    margin-top: 50px;
+  }
+  .choose-right-text {
+    margin-top: 20px;
+    height: unset;
+  }
+  .choose-right #checkbox-input {
+    height: unset;
+    margin-top: 20px;
+  }
+  .choose-buttons {
+    margin-top: 550px;
+  }
+  .choose-buttons button {
+    width: 40%;
+    height: 80px;
+    padding: 0px 5vw;
+  }
+
+  .mobile-donate-title,
+  .mobile-donation-img {
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-page {
+    width: calc(100vw - 100px);
+    padding: 7.5vh 50px;
+  }
+  .choose-left {
+    height: unset;
+  }
+  .choose-left > p {
+    height: unset;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .choose-left > div {
+    display: flex;
+    width: 100%;
+    height: 1050px;
+    overflow-x: unset;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .choose-left > div > div {
+    width: 40%;
+    padding: 0 5%;
+    height: 600px;
+    align-items: center;
+    align-content: center;
+  }
+  .icon-first img {
+    height: 60px;
+  }
+  .icon-second img,
+  .icon-smallin > div {
+    height: 80px;
+  }
+  .icon-box-bone img {
+    height: 180px;
+  }
+  .icon-box-bone {
+    justify-content: flex-start;
+  }
+  .icon-box-bone .icon-solid {
+    top: unset;
+  }
+  .icon-box-small img {
+    height: 45px;
+  }
+  .icon-skin img {
+    height: 70px;
+  }
+  .icon-kidney img {
+    height: 65px;
+    margin-top: 10px;
+  }
+  .icon-box-small {
+    height: 110px;
+  }
+  .choose-buttons {
+    margin-top: unset;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  #cancel-button {
+    display: none;
+  }
+  .choose-buttons button {
+    width: 200px;
+  }
+  .choose-buttons button h4,
+  .choose-buttons button p {
+    font-size: 20px;
+  }
+  .choose-content textarea {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organ Donation</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon-grid/lungs.png" />
+
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/fullpage.css" rel="stylesheet" type="text/css" />
+    <link href="./css/text-guide.css" rel="stylesheet" />
+
+    <link href="./css/part0-anime.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--0.進場過動頁-->
+    <div class="part0">
+      <!--背景光暈動畫-->
+      <div class="part0-lightanime">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+
+      <section class="part0-titleanime section">
+        <div><h1 class="alice part0-title">Organ Donation</h1></div>
+        <a href="#change-anime">
+          <img src="./img/part0-scroll.png" class="part0-strollanime"
+        /></a>
+      </section>
+
+      <div id="change-anime">
+        <span id="change-anime-border"></span>
+        <div>
+          <img src="./img/changeanime-solidheart.png" id="shine" />
+          <div id="fillup-anime"></div>
+          <span><img src="./img/changeanime-lineheart.png" /></span>
+        </div>
+        <h4 class="alice" id="click-me-a"><a href="#home">Click me</a></h4>
+        <span id="stop-scroll-trigger"></span>
+      </div>
+    </div>
+
+    <!--手機版nav-->
+    <div class="mobile-nav">
+      <span id="mobile-nav-open"
+        ><img src="./img/mobile-img/nav-hamburger.png"
+      /></span>
+    </div>
+    <div class="mobile-navlist">
+      <div class="mobile-navlist-block">
+        <span id="mobile-nav-close"
+          ><img src="./img/mobile-img/nav-cancel.png"
+        /></span>
+      </div>
+
+      <a href="#home"
+        ><div class="mobile-navlist-box">
+          <p class="l-text noto-serif-tc">首頁</p>
+        </div></a
+      >
+      <a href="#part2-process-title"
+        ><div class="mobile-navlist-box">
+          <p class="l-text noto-serif-tc">過程</p>
+        </div></a
+      >
+
+      <a href="#mobile-intro-part"
+        ><div class="mobile-navlist-box mobile-navlist-box2">
+          <p class="l-text noto-serif-tc">介紹</p>
+        </div></a
+      >
+
+      <a href="#mobile-donate"
+        ><div class="mobile-navlist-box mobile-navlist-box3">
+          <p class="l-text noto-serif-tc">捐贈</p>
+        </div></a
+      >
+    </div>
+
+    <!--part1-第一偵滿版標題+navigation-->
+    <div class="part1-fulltitle section" id="home">
+      <h1 class="alice">
+        <span>Give </span><span>Live</span><span>&</span><span>Believe</span>
+      </h1>
+      <p class="s-text noto-serif-tc">
+        一切殞落，同時也滋養著另一個生機。在離開之前，留下一部分的自己，成為另一個生命的養分。
+        <br />所謂遺愛人間，便是捐贈器官，同時積累一份善意。
+      </p>
+
+      <nav id="nav-bubble-bg">
+        <span id="nav-bubble" class="bubblein2 bubble2to1"></span>
+      </nav>
+
+      <!--橘色桌機nav-->
+      <nav class="nav-orange appear">
+        <div>
+          <a href="#home"><img src="./img/nav-home.png" /></a>
+        </div>
+        <div>
+          <a href="#part2-process-title"><img src="./img/nav-process.png" /></a>
+        </div>
+        <div>
+          <a href="#part4"><img src="./img/nav-intro.png" /></a>
+        </div>
+      </nav>
+
+      <!--白色桌機nav-->
+
+      <nav class="nav-white disappear nav-tab-appear">
+        <div>
+          <a href="#home"><img src="./img/nav-white-home.png" /></a>
+        </div>
+        <div>
+          <a href="#part2-process-title"
+            ><img src="./img/nav-white-process.png"
+          /></a>
+        </div>
+        <div>
+          <a href="#part4"><img src="./img/nav-white-intro.png" /></a>
+        </div>
+      </nav>
+    </div>
+
+    <!--part2-process部分副標-->
+    <div class="part2-process-title" id="part2-process-title">
+      <h2 class="alice" id="bubbleinto2">
+        Organ Donation <br />
+        Process
+      </h2>
+    </div>
+    <!--part3-器官圖-->
+    <div class="part3-process-organ">
+      <!--彈出視窗-->
+      <div class="process-dialog-mask"></div>
+
+      <div class="process-dialog dialog-lung">
+        <div class="process-dialog-border">
+          <img src="./img/icon-solid/lungs.png" />
+          <p class="noto-serif-tc m-text">
+            捐贈肺部可以幫助到無法靠自己的肺部維生、甚至連運動都會喘的肺功能不良者。肺的主要功能是將氧氣從空氣運送到血液中，並將二氧化碳從血液排至空氣中。當肺功能無法正常運作且無法透過治療改善時，便需要進行肺移植來獲得生命的延續。
+          </p>
+        </div>
+      </div>
+
+      <div class="process-dialog dialog-liver">
+        <div class="process-dialog-border">
+          <img src="./img/icon-solid/liver.png" />
+          <p class="noto-serif-tc m-text">
+            肝臟具備製造、加工、解毒、排泄、儲存和調整的功能。而捐贈肝臟能夠幫助像是肝癌、猛爆性肝炎起的起急性肝衰竭、肝癌肝硬化引起的食道靜脈出血，或是代謝性疾病，因肝無法代謝所造成的肝昏迷等等疾病患者恢復生活的品質。
+          </p>
+        </div>
+      </div>
+
+      <div class="process-dialog dialog-heart">
+        <div class="process-dialog-border">
+          <img src="./img/icon-solid/heart.png" />
+          <p class="noto-serif-tc m-text">
+            心臟是人體中極為重要的器官，當心臟無法發揮功能，並對治療反應不佳時，會產生嚴重心臟衰竭症狀，倘若身體其它器官亦無法得到足夠的血液供應，將需要藉由心臟移植來延續其壽命，而我們可以透過捐贈器官來幫助這樣的病患回復生理機能，秉永有健康的身體，繼續生活。
+          </p>
+        </div>
+      </div>
+
+      <div class="process-dialog dialog-small-intesline">
+        <div class="process-dialog-border">
+          <img src="./img/icon-solid/small-intesline.png" />
+          <p class="noto-serif-tc m-text">
+            小腸的功能主要是食物消化和吸收營養，當小腸功能衰竭時，身體就很難獲得養份，而捐贈小腸能夠幫助腸功能衰竭的人脫離一進食就不斷嘔吐、腹瀉，只能依靠靜脈注射打營養針勉強維繫生命的生活，讓他們能夠重新擁有健康的身體去體驗美好的人生。
+          </p>
+        </div>
+      </div>
+
+      <div class="process-dialog dialog-kidney">
+        <div class="process-dialog-border">
+          <img src="./img/icon-solid/kidney.png" />
+          <p class="noto-serif-tc m-text">
+            腎臟主要負責維持體內水分和電解質的平衡，並排除一些代謝廢物。而腎功能衰竭者必須仰賴定期的洗腎來維生，腎臟移植能夠幫助他們脫離洗腎的羈絆，生活品質大幅提升，也有助於降低醫療支出。
+          </p>
+        </div>
+      </div>
+      <!--文字-->
+      <h4 class="noto-serif-tc" id="process-text01">入院</h4>
+      <img src="./img/process-organ/first-line.png" id="process-line01" />
+      <h4 class="noto-serif-tc" id="process-text02">
+        確認患者<br />無腦幹神經反應
+      </h4>
+      <img src="./img/process-organ/second-line.png" id="process-line02" />
+      <h4 class="noto-serif-tc" id="process-text03">關懷與輔導家屬</h4>
+      <img src="./img/process-organ/third-line.png" id="process-line03" />
+      <h4 class="noto-serif-tc" id="process-text04">
+        維持腦死者<br />器官功能
+      </h4>
+      <img src="./img/process-organ/forth-line.png" id="process-line04" />
+      <h4 class="noto-serif-tc" id="process-text05">同意捐贈器官</h4>
+      <hr id="process-line05" />
+      <h4 class="noto-serif-tc" id="process-text06">聯絡移植團隊</h4>
+      <hr id="process-line06" />
+      <h4 class="noto-serif-tc" id="process-text07">兩次腦死判定</h4>
+      <hr id="process-line07" />
+      <h4 class="noto-serif-tc" id="process-text08">
+        意外死亡者須報請檢察官核准
+      </h4>
+      <hr id="process-line08" />
+      <h4 class="noto-serif-tc" id="process-text09">摘取器官或組織</h4>
+      <hr id="process-line09" />
+      <h4 class="noto-serif-tc" id="process-text10">移植</h4>
+      <hr id="process-line10" />
+      <h4 class="noto-serif-tc" id="process-text11">保存</h4>
+      <hr id="process-line11" />
+      <h4 class="noto-serif-tc" id="process-text12">協助出院與善後</h4>
+      <hr id="process-line12" />
+      <h4 class="noto-serif-tc" id="process-text13">家屬輔導聯誼</h4>
+      <!--器官img-->
+      <img
+        id="process-bone"
+        src="./img/process-organ/process-bone.png"
+        width="100%"
+      />
+      <img
+        id="process-lung"
+        src="./img/process-organ/process-lung.png"
+        width="78%"
+      />
+
+      <img
+        id="process-heart"
+        src="./img/process-organ/process-heart.png"
+        width="18%"
+      />
+      <img
+        id="process-liver"
+        src="./img/process-organ/process-liver.png"
+        width="42%"
+      />
+      <img
+        id="process-organ1"
+        src="./img/process-organ/process-organ1.png"
+        width="38%"
+      />
+      <img
+        id="process-kidney"
+        src="./img/process-organ/process-kidney.png"
+        width="70%"
+      />
+      <img
+        id="process-small-intesline"
+        src="./img/process-organ/process-small-intesline.png"
+        width="65%"
+      />
+
+      <!--點擊指示-->
+      <span id="pulse-effect-lung">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-heart">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-liver">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-kidney">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-small">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+    </div>
+
+    <div class="page4" id="page4">
+      <div class="outer-wrapper stop-scroll no-background" id="outer-wrapper">
+        <div class="wrapperpart4" id="part4">
+          <div id="part4-trigger"></div>
+          <div id="tabnavs-trigger"></div>
+          <div class="part4-one">
+            <div id=""></div>
+            <img src="./img/Organ-Donation-Process.png" id="part4title" />
+          </div>
+
+          <div class="" id="part4-button">
+            <a href="#part4-button"><img src="./img/intro-openbutoon.png" /></a>
+          </div>
+          <div class="part5-introstitle">
+            <img src="./img/intro-openbutoon-hover.png" />
+          </div>
+          <div class="intro-body" id="part5-intro">
+            <div class="intro-tip">
+              <div>
+                <img src="./img/part5-titleframe.png" />
+                <h3 class="noto-serif-tc">何謂器官捐贈？</h3>
+              </div>
+              <p class="l-text noto-serif-tc">
+                意指當一個人被判定腦死或是臨終時，基於個人生前意願的簽署或家屬同意，將其可用的器官或組織以無償捐贈的方式捐給需要的病人。
+              </p>
+            </div>
+
+            <div class="intro-tip" id="intro-trigger2">
+              <div>
+                <img src="./img/part5-titleframe.png" />
+                <h3 class="noto-serif-tc">為什麼需要有人捐贈器官？</h3>
+              </div>
+              <p class="l-text noto-serif-tc">
+                有些病患因疾病或藥物影響造成器官衰竭導致性命垂危，如果能獲得器官，就可以透過器官移植手術恢復健康，如果沒有得到器官，腎臟衰竭者僅能依靠洗腎維持生命，而心臟、肝臟或肺臟衰竭者則可能走向死亡。
+              </p>
+            </div>
+
+            <div class="intro-tip" id="intro-trigger3">
+              <div>
+                <img src="./img/part5-titleframe.png" />
+                <h3 class="noto-serif-tc">器官捐贈有哪些種類？</h3>
+              </div>
+              <p class="l-text noto-serif-tc introtiptext3-1">
+                活體捐贈是指將部分器官捐贈給五親等以內之血親或配偶。（配偶須與捐贈器官者生有子女或結婚二年以上）結婚滿一年後經醫師診斷罹患移植適應症者不在此限，並應符合人體器官移植條例其他相關規定。且捐贈者需簽署器官捐贈同意書並經醫院進行心理、社會及醫學判定適合捐贈，方能進行活體器官捐贈手術。
+              </p>
+              <p class="l-text noto-serif-tc introtiptext3-2">
+                屍體器官捐贈是診治醫師判定病人死亡後，自屍體摘取器官施行移植手術，前述死亡以腦死判定者，應依中央衛生主管機關規定之判定程序為之。並施以無償捐贈方式為之。
+              </p>
+            </div>
+
+            <div class="intro-tip">
+              <div>
+                <img src="./img/part5-titleframe.png" />
+                <h3 class="noto-serif-tc">有哪些疾病會影響器官的捐贈？</h3>
+              </div>
+              <p class="l-text noto-serif-tc">
+                有B、C型肝炎的捐贈者，只要器官功能良好，還是可以捐贈器官給有B、C型肝炎的移植等候者。但若有無法控制的感染性疾病者，則不能捐贈器官(如愛滋病或狂牛症)。
+              </p>
+            </div>
+
+            <div class="intro-tip">
+              <div>
+                <img src="./img/part5-titleframe.png" />
+                <h3 class="noto-serif-tc">哪些器官、組織可以捐贈？</h3>
+              </div>
+              <p class="l-text noto-serif-tc">
+                依據人體器官移植條例施行細則規定，可移植的器官類目包括：心臟、肺臟、肝臟、腎臟、胰臟、小腸、眼角膜、皮膚、骨骼及其他經中央衛生主管機關指定之類目。
+              </p>
+            </div>
+            <div id="navnone-trigger"></div>
+          </div>
+
+          <div class="intro-body-end">
+            <img src="./img/intro-bodycircle.png" height="100%" />
+          </div>
+
+          <div class="intro-donation-button" id="intro-donation-button">
+            <a href="./donation/index.html" target="_blank"
+              ><img src="./img/intro-donate.png" height="100%" />
+              <img src="./img/intro-donate-hover.png" height="100%"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--手機版-->
+    <div class="mobile-intro" id="mobile-intro-part">
+      <h1 class="alice" id="mobile-intro-title">Intro</h1>
+      <div class="mobile-intro-mask"></div>
+      <img src="./img/mobile-img/intro-title.png" width="100%" />
+      <div class="mobile-intro-body">
+        <div class="intro-tip">
+          <div>
+            <img src="./img/part5-titleframe.png" />
+            <h3 class="noto-serif-tc">何謂器官捐贈？</h3>
+          </div>
+          <p class="l-text noto-serif-tc">
+            意指當一個人被判定腦死或是臨終時，基於個人生前意願的簽署或家屬同意，將其可用的器官或組織以無償捐贈的方式捐給需要的病人。
+          </p>
+        </div>
+
+        <div class="intro-tip">
+          <div>
+            <img src="./img/part5-titleframe.png" />
+            <h3 class="noto-serif-tc">為什麼需要有人捐贈器官？</h3>
+          </div>
+          <p class="l-text noto-serif-tc">
+            有些病患因疾病或藥物影響造成器官衰竭導致性命垂危，如果能獲得器官，就可以透過器官移植手術恢復健康，如果沒有得到器官，腎臟衰竭者僅能依靠洗腎維持生命，而心臟、肝臟或肺臟衰竭者則可能走向死亡。
+          </p>
+        </div>
+
+        <div class="intro-tip">
+          <div>
+            <img src="./img/part5-titleframe.png" />
+            <h3 class="noto-serif-tc">器官捐贈有哪些種類？</h3>
+          </div>
+          <p class="l-text noto-serif-tc introtiptext3-1">
+            活體捐贈是指將部分器官捐贈給五親等以內之血親或配偶。（配偶須與捐贈器官者生有子女或結婚二年以上）結婚滿一年後經醫師診斷罹患移植適應症者不在此限，並應符合人體器官移植條例其他相關規定。且捐贈者需簽署器官捐贈同意書並經醫院進行心理、社會及醫學判定適合捐贈，方能進行活體器官捐贈手術。
+          </p>
+          <p class="l-text noto-serif-tc introtiptext3-2">
+            屍體器官捐贈是診治醫師判定病人死亡後，自屍體摘取器官施行移植手術，前述死亡以腦死判定者，應依中央衛生主管機關規定之判定程序為之。並施以無償捐贈方式為之。
+          </p>
+        </div>
+
+        <div class="intro-tip">
+          <div>
+            <img src="./img/part5-titleframe.png" />
+            <h3 class="noto-serif-tc">有哪些疾病會影響器官的捐贈？</h3>
+          </div>
+          <p class="l-text noto-serif-tc">
+            有B、C型肝炎的捐贈者，只要器官功能良好，還是可以捐贈器官給有B、C型肝炎的移植等候者。但若有無法控制的感染性疾病者，則不能捐贈器官(如愛滋病或狂牛症)。
+          </p>
+        </div>
+
+        <div class="intro-tip">
+          <div>
+            <img src="./img/part5-titleframe.png" />
+            <h3 class="noto-serif-tc">哪些器官、組織可以捐贈？</h3>
+          </div>
+          <p class="l-text noto-serif-tc">
+            依據人體器官移植條例施行細則規定，可移植的器官類目包括：心臟、肺臟、肝臟、腎臟、胰臟、小腸、眼角膜、皮膚、骨骼及其他經中央衛生主管機關指定之類目。
+          </p>
+        </div>
+      </div>
+      <img
+        src="./img/mobile-img/intro-end.png"
+        id="mobile-intro-end"
+        width="100%"
+      />
+
+      <div class="mobile-donate" id="mobile-donate">
+        <div class="mobile-intro-mask"></div>
+        <img src="./img/mobile-img/intro-title.png" width="100%" />
+        <div class="mobile-intro-body">
+          <p class="l-text noto-serif-tc">
+            提醒您，線上送出資料後，請務必列印同意書，簽名後郵寄至本會，後續辦理健保IC卡登錄，才算完成器捐意願預立。如不便列印，請來信或致電告知姓名、收件地址，由本會郵寄同意書。<br />
+            說明事項：<br /><br />
+            一、依人體器官移植條例之規定，器官捐贈必須為無償之行為，且器官之摘取，應於病人之診治醫師判定死亡後為之（含腦死判定）。如病人為非病死或疑似為非病死者，必須於依法相驗完畢後，且經檢察官認無繼續勘驗之必要後，才能施行。<br /><br />
+            二、另依人體器官移植條例第六條之規定，醫師自往生者遺體摘取器官以供移植，須符合下列規定之一：<br />
+            （一）往生者生前以書面（如本同意書）或遺囑同意。<br />
+            （二）往生者最近親屬以書面同意。<br /><br />
+            三、您簽署的器官捐贈同意書，將依人體器官移植條例第六條規定，加註於健保卡並掃描存檔於「衛生福利部安寧療護及器官捐贈意願資訊系統」；如醫院、醫師遇有病人經診斷其病情於近期內進行至死亡已不可避免，且該病人無法清楚表達意識之情況下，將以此作為決定器官捐贈之依循，並可讓家屬充分瞭解病人生前之意願。醫院、醫師絕不會因知悉此捐贈意願而不施予必要治療。<br /><br />
+            四、捐贈者如患無法控制的感染性疾病，如庫賈氏病（Creutzfeldt-Jakob
+            Disease，CJD）…等等，為避免因器官移植而傳染給受贈者，醫院、醫師得不接受病人之器官捐贈。<br /><br />
+            五、您所表達之器官捐贈意願，可隨時查詢或撤回。如欲查詢或撤回該意願，可聯絡「衛生福利部安寧療護及器官捐贈意願資料處理小組」單位協助處理，電話：02-2393-3298。<br /><br />
+            六、本資料僅供器官捐贈意願表達使用，將依個人資料保護法，善盡保密之責任。
+          </p>
+          <div class="mobile-donate-block"></div>
+        </div>
+        <img
+          src="./img/mobile-img/intro-end.png"
+          id="mobile-donate-end"
+          width="100%"
+        />
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

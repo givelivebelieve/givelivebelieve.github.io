@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon-grid/lungs.png" />
+
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/text-guide.css" rel="stylesheet" />
+    <link href="./css/donation.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--page1/注意事項頁面-->
+
+    <div class="page-bg page1-precaution">
+      <div class="single-page">
+        <div class="title-donation">
+          <img src="../img/title-donate.png" />
+        </div>
+        <div class="precaution-content">
+          <p class="noto-serif-tc m-text">
+            提醒您，線上送出資料後，請務必列印同意書，簽名後郵寄至本會，後續辦理健保IC卡登錄，才算完成器捐意願預立。如不便列印，請來信或致電告知姓名、收件地址，由本會郵寄同意書。
+            <br />
+            說明事項：
+            <br />
+            <br />
+            一、依人體器官移植條例之規定，器官捐贈必須為無償之行為，且器官之摘取，應於病人之診治醫師判定死亡後為之（含腦死判定）。
+            如病人為非病死或疑似為非病死者，必須於依法相驗完畢後，且經檢察官認無繼續勘驗之必要後，才能施行。
+            <br />
+            <br />
+            二、另依人體器官移植條例第六條之規定，醫師自往生者遺體摘取器官以供移植，須符合下列規定之一：
+            <br />
+            （一）往生者生前以書面（如本同意書）或遺囑同意。
+            <br />
+            （二）往生者最近親屬以書面同意。
+            <br />
+            三、您簽署的器官捐贈同意書，將依人體器官移植條例第六條規定，加註於健保卡並掃描存檔於「衛生福利部安寧療護及器官捐贈意願資訊系統」；
+            如醫院、醫師遇有病人經診斷其病情於近期內進行至死亡已不可避免，且該病人無法清楚表達意識之情況下，將以此作為決定器官捐贈之依循，並可讓家屬充分瞭解病人生前之意願。
+            醫院、醫師絕不會因知悉此捐贈意願而不施予必要治療。
+            <br />
+            <br />
+            四、捐贈者如患無法控制的感染性疾病，如庫賈氏病（Creutzfeldt-Jakob
+            Disease，CJD）…等等，為避免因器官移植而傳染給受贈者，醫院、醫師得不接受病人之器官捐贈。
+            <br />
+            <br />
+            五、您所表達之器官捐贈意願，可隨時查詢或撤回。如欲查詢或撤回該意願，
+            可聯絡「衛生福利部安寧療護及器官捐贈意願資料處理小組」單位協助處理，電話：02-2393-3298。
+            <br />
+            <br />
+            六、本資料僅供器官捐贈意願表達使用，將依個人資料保護法，善盡保密之責任。
+          </p>
+        </div>
+      </div>
+      <div class="nextpage-button nextpage-1">
+        <img src="../img/button-nextpagehover.png" />
+        <img src="../img/button-nextpage.png" />
+      </div>
+    </div>
+
+    <!--page2/基本資料頁面-->
+    <div class="page-bg page2-input">
+      <div class="back-button lastpage-2">
+        <img src="../img/return-hover.png" />
+        <img src="../img/return.png" />
+      </div>
+
+      <div class="mobile-donate-title">
+        <h1 class="alice">Donate</h1>
+        <img src="../img/mobile-img/intro-title.png" width="100%" />
+      </div>
+
+      <div class="single-page">
+        <div class="title-donation">
+          <img src="../img/title-donate.png" />
+        </div>
+        <form class="input-content" target="iframe" method="post">
+          <div class="inputs-left">
+            <div>
+              <p class="l-text noto-serif-tc">簽署人 *</p>
+              <input type="text" name="name" required />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">國民身分證統一編號 *</p>
+              <input
+                type="text"
+                name="identity-number"
+                required
+                pattern="[A-Z]{1}[0-9]{9}"
+              />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">出生日期 *</p>
+              <input type="date" name="birthday" required />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">聯絡電話 *</p>
+              <input type="text" name="phone" required />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">手機號碼 *</p>
+              <input
+                type="text"
+                name="cellphone"
+                required
+                pattern="[0-9]{10}"
+              />
+            </div>
+          </div>
+
+          <div class="inputs-right">
+            <div>
+              <p class="l-text noto-serif-tc">Email *</p>
+              <input type="email" name="email" required />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">聯絡地址 *</p>
+              <input type="text" name="actress" required />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">
+                簽署人未滿20歲，方填寫法定代理人姓名
+              </p>
+              <input type="text" />
+            </div>
+
+            <div>
+              <p class="l-text noto-serif-tc">法定代理人國民身分證統一編號</p>
+              <input type="text" />
+            </div>
+
+            <label id="checkbox-input">
+              <input type="checkbox" />
+              <span class="l-text noto-serif-tc">本人獲得器官捐贈同意卡</span>
+            </label>
+          </div>
+
+          <button type="submit" class="nextpage-button nextpage-2">
+            <img src="../img/button-nextpagehover.png" />
+            <img src="../img/button-nextpage.png" />
+          </button>
+        </form>
+
+        <iframe id="ifame" name="iframe" style="display: none"></iframe>
+      </div>
+      <img
+        src="../img/mobile-img/intro-end.png"
+        class="mobile-donation-img"
+        width="100%"
+      />
+    </div>
+
+    <!--page3/選擇捐贈器官-->
+    <div class="page-bg page3-choose">
+      <div class="mobile-donate-title">
+        <h1 class="alice">Donate</h1>
+        <img src="../img/mobile-img/intro-title.png" width="100%" />
+      </div>
+
+      <div class="back-button lastpage-3">
+        <img src="../img/return-hover.png" />
+        <img src="../img/return.png" />
+      </div>
+      <div class="single-page">
+        <div class="title-donation">
+          <img src="../img/title-donate.png" />
+        </div>
+        <div class="choose-content">
+          <div class="choose-left">
+            <p class="l-text noto-serif-tc">願意捐贈之項目（可複選）</p>
+            <div>
+              <div>
+                <div class="icon-first icon-lung">
+                  <img
+                    src="../img/icon-solid/lungs.png"
+                    class="icon-solid js-lung"
+                  />
+                  <img src="../img/icon-line/lungs.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">肺</p>
+                </div>
+                <div class="icon-box icon-second icon-tendon icon-jsbox">
+                  <img
+                    src="../img/icon-solid/tendon.png"
+                    class="icon-solid js-tendon"
+                  />
+                  <img src="../img/icon-line/tendon.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">肌腱</p>
+                </div>
+                <div class="icon-box-bone icon-jsbox">
+                  <img
+                    src="../img/icon-solid/bone.png"
+                    class="icon-solid js-bone"
+                  />
+                  <img src="../img/icon-line/bone.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">骨骼</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="icon-first icon-blood icon-jsbox">
+                  <img
+                    src="../img/icon-solid/blood.png"
+                    class="icon-solid js-blood"
+                  />
+                  <img src="../img/icon-line/blood.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">血管</p>
+                </div>
+                <div class="icon-box icon-second icon-kidney icon-jsbox">
+                  <img
+                    src="../img/icon-solid/kidney.png"
+                    class="icon-solid js-kidney"
+                  />
+                  <img src="../img/icon-line/kidney.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">腎</p>
+                </div>
+                <div class="icon-box-small icon-liver icon-jsbox">
+                  <img
+                    src="../img/icon-solid/liver.png"
+                    class="icon-solid js-liver"
+                  />
+                  <img src="../img/icon-line/liver.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">肝</p>
+                </div>
+                <div class="icon-box-small icon-skin icon-jsbox">
+                  <img
+                    src="../img/icon-solid/skin.png"
+                    class="icon-solid js-skin"
+                  />
+                  <img src="../img/icon-line/skin.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">皮膚</p>
+                </div>
+              </div>
+
+              <div class="icon-column-third">
+                <div class="icon-first icon-cornea icon-jsbox">
+                  <img
+                    src="../img/icon-solid/cornea.png"
+                    class="icon-solid js-cornea"
+                  />
+                  <img src="../img/icon-line/cornea.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">眼角膜</p>
+                </div>
+
+                <div class="icon-box icon-second icon-trachea icon-jsbox">
+                  <img
+                    src="../img/icon-solid/trachea.png"
+                    class="icon-solid js-trachea"
+                  />
+                  <img src="../img/icon-line/trachea.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">氣管</p>
+                </div>
+
+                <div class="icon-box icon-second icon-heart">
+                  <img
+                    src="../img/icon-solid/heart.png"
+                    class="icon-solid js-heart"
+                  />
+                  <img src="../img/icon-line/heart.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">心臟</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="icon-first icon-pancreas">
+                  <img
+                    src="../img/icon-solid/pancreas.png"
+                    class="icon-solid js-pancreas"
+                  />
+                  <img src="../img/icon-line/pancreas.png" class="icon-line" />
+                  <p class="s-text noto-serif-tc">胰臟</p>
+                </div>
+
+                <div class="icon-box icon-smallin">
+                  <div>
+                    <img
+                      src="../img/icon-solid/small-intesline.png"
+                      class="icon-solid js-intesline"
+                    />
+                    <img
+                      src="../img/icon-line/small-intesline.png"
+                      class="icon-line"
+                    />
+                  </div>
+                  <p class="s-text noto-serif-tc">小腸</p>
+                </div>
+
+                <div class="icon-box icon-smallin icon-heart-valve">
+                  <div>
+                    <img
+                      src="../img/icon-solid/heart-valve.png"
+                      class="icon-solid js-heart-valve"
+                    />
+                    <img
+                      src="../img/icon-line/heart-valve.png"
+                      class="icon-line"
+                    />
+                  </div>
+                  <p class="s-text noto-serif-tc">心瓣膜</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choose-right">
+            <div class="choose-right-up">
+              <div class="choose-right-text">
+                <p class="l-text noto-serif-tc">簽署原因</p>
+                <textarea></textarea>
+              </div>
+
+              <div class="choose-right-text">
+                <p class="l-text noto-serif-tc">給家人的話</p>
+                <textarea></textarea>
+              </div>
+
+              <label id="checkbox-input">
+                <input type="checkbox" />
+                <span class="l-text noto-serif-tc"
+                  ><a href="#" class="open-caution"
+                    >我已閱讀並同意說明事項</a
+                  ></span
+                >
+              </label>
+            </div>
+
+            <div class="dia-precaution"></div>
+            <div class="dia-precaution-box">
+              <div id="precaution-close">
+                <img src="../img/button-cancel.png" />
+              </div>
+              <p class="noto-serif-tc m-text">
+                提醒您，線上送出資料後，請務必列印同意書，簽名後郵寄至本會，後續辦理健保IC卡登錄，才算完成器捐意願預立。如不便列印，請來信或致電告知姓名、收件地址，由本會郵寄同意書。
+                <br />
+                說明事項：
+                <br />
+                <br />
+                一、依人體器官移植條例之規定，器官捐贈必須為無償之行為，且器官之摘取，應於病人之診治醫師判定死亡後為之（含腦死判定）。
+                如病人為非病死或疑似為非病死者，必須於依法相驗完畢後，且經檢察官認無繼續勘驗之必要後，才能施行。
+                <br />
+                <br />
+                二、另依人體器官移植條例第六條之規定，醫師自往生者遺體摘取器官以供移植，須符合下列規定之一：
+                <br />
+                （一）往生者生前以書面（如本同意書）或遺囑同意。
+                <br />
+                （二）往生者最近親屬以書面同意。
+                <br />
+                三、您簽署的器官捐贈同意書，將依人體器官移植條例第六條規定，加註於健保卡並掃描存檔於「衛生福利部安寧療護及器官捐贈意願資訊系統」；
+                如醫院、醫師遇有病人經診斷其病情於近期內進行至死亡已不可避免，且該病人無法清楚表達意識之情況下，將以此作為決定器官捐贈之依循，並可讓家屬充分瞭解病人生前之意願。
+                醫院、醫師絕不會因知悉此捐贈意願而不施予必要治療。
+                <br />
+                <br />
+                四、捐贈者如患無法控制的感染性疾病，如庫賈氏病（Creutzfeldt-Jakob
+                Disease，CJD）…等等，為避免因器官移植而傳染給受贈者，醫院、醫師得不接受病人之器官捐贈。
+                <br />
+                <br />
+                五、您所表達之器官捐贈意願，可隨時查詢或撤回。如欲查詢或撤回該意願，
+                可聯絡「衛生福利部安寧療護及器官捐贈意願資料處理小組」單位協助處理，電話：02-2393-3298。
+                <br />
+                <br />
+                六、本資料僅供器官捐贈意願表達使用，將依個人資料保護法，善盡保密之責任。
+              </p>
+            </div>
+            <div class="choose-buttons">
+              <button id="cancel-button">
+                <h4 class="alice">Cancel</h4>
+                <p class="noto-serif-tc l-text">取消</p>
+              </button>
+
+              <button id="donate-button">
+                <h4 class="alice">donate</h4>
+                <p class="noto-serif-tc l-text">捐贈</p>
+              </button>
+            </div>
+            <!--送出前取消視窗-->
+            <div class="cancel-alert dia-close">
+              <p class="m-text noto-serif-tc">
+                再次向您確認是否取消捐贈表單之填寫
+              </p>
+              <div>
+                <button class="m-text noto-serif-tc">
+                  <a href="../index.html">是</a>
+                </button>
+                <button class="m-text noto-serif-tc" id="cancel-alert-no">
+                  否
+                </button>
+              </div>
+            </div>
+            <!--送出前確認視窗-->
+            <div class="donate-alert dia-close">
+              <p class="m-text noto-serif-tc">
+                再次向您確認是否確定送出同意捐贈之表單
+              </p>
+              <div>
+                <button class="m-text noto-serif-tc" id="donate-alert-no">
+                  否
+                </button>
+                <button id="donate-alert-yes">
+                  <a href="../thanks/index.html" class="m-text noto-serif-tc"
+                    >是</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="../img/mobile-img/intro-end.png"
+        class="mobile-donation-img"
+        width="100%"
+      />
+    </div>
+
+    <script src="./js/donation.js"></script>
+  </body>
+</html>

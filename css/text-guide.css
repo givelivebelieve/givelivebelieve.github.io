@@ -1,0 +1,141 @@
+/*Alice-font-setting*/
+@font-face {
+  font-family: "Alice";
+  src: url(../font/Alice.eot) format("embedded-opentype"),
+    url(../font/Alice.ttf) format("truetype"),
+    url(../font/Alice.woff) format("woff");
+}
+
+/*標題*/
+h1 {
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 122px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+h2 {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 122px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 122px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+h4 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 122px;
+  letter-spacing: 0.05em;
+
+  color: black;
+}
+
+/*內文*/
+.l-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.m-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.s-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+/*字體*/
+.alice {
+  font-family: "Alice";
+}
+.noto-serif-tc {
+  font-family: "Noto Serif TC";
+}
+@media (max-width: 1600px) {
+  h1 {
+    font-size: 84px;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 92px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 70px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .l-text {
+    font-size: 18px;
+  }
+  .m-text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .s-text {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 72px;
+  }
+  .m-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 94px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  h4 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .l-text {
+    font-size: 14px;
+  }
+  .m-text {
+    font-size: 12px;
+  }
+  .s-text {
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+}

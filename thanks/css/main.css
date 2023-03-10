@@ -1,0 +1,345 @@
+html {
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+section:nth-child(1) {
+  top: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(89.73deg, #e95514 25.7%, #ffffff 112.82%);
+  padding: 0;
+}
+.hand {
+  display: block;
+  position: relative;
+  width: 1400px;
+  height: 1080px;
+  left: calc(50vw - 700px);
+}
+#big-hand {
+  position: absolute;
+  width: 700px;
+  top: 300px;
+  left: 0;
+  z-index: 2;
+  animation: BigHand 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes BigHand {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    top: 300px;
+    left: 0;
+  }
+  100% {
+    top: 245px;
+    left: 110px;
+  }
+}
+
+#small-hand {
+  position: absolute;
+  width: 650px;
+  top: -200px;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  animation: SmallHand 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+@keyframes SmallHand {
+  0%,
+  25% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+    top: -250px;
+    right: 0;
+  }
+  100% {
+    opacity: 1;
+    top: -185px;
+    right: 20px;
+  }
+}
+#slogan {
+  position: absolute;
+  width: 75px;
+  opacity: 0;
+  left: 720px;
+  top: 320px;
+  animation: Slogan 6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes Slogan {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+#big-hand2 {
+  position: relative;
+  display: block;
+  animation: BigHandEnd 2s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+@keyframes BigHandEnd {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: -10vw;
+    opacity: 0;
+  }
+}
+#small-hand2 {
+  position: relative;
+  display: block;
+  animation: SmallHandEnd 2s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
+@keyframes SmallHandEnd {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: 10vw;
+    opacity: 0;
+  }
+}
+@media (max-width: 1600px) {
+  #big-hand {
+    width: 600px;
+    top: 250px;
+    left: 100px;
+  }
+  @keyframes BigHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: 250px;
+      left: 70px;
+    }
+    100% {
+      top: 200px;
+      left: 150px;
+    }
+  }
+
+  #small-hand {
+    width: 570px;
+    top: -225px;
+    right: 80px;
+  }
+  @keyframes SmallHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: -225px;
+      right: 80px;
+    }
+    100% {
+      opacity: 1;
+      top: -170px;
+      right: 140px;
+    }
+  }
+}
+
+section:nth-child(2) {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+h1 {
+  display: flex;
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: ThanksTitle 1s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+@keyframes ThanksTitle {
+  0% {
+    opacity: 0;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    top: -60px;
+  }
+}
+section:nth-child(2) > div {
+  height: 45vh;
+  width: 100vw;
+  opacity: 0;
+  position: relative;
+  display: block;
+  bottom: 45vh;
+  animation: Share 1s;
+  animation-delay: 16s;
+  animation-fill-mode: forwards;
+}
+@keyframes Share {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+section:nth-child(2) p {
+  display: block;
+  width: 100vw;
+  text-align: center;
+}
+section:nth-child(2) > div > div {
+  display: flex;
+  width: 350px;
+  position: relative;
+  left: calc(50vw - 175px);
+  bottom: -15vh;
+  justify-content: space-between;
+}
+section:nth-child(2) > div > div > a,
+section:nth-child(2) > div > div > button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(2) > div > div > a img {
+  width: 32.5px;
+}
+section:nth-child(2) > div > div > a:nth-child(2) img {
+  width: 17.5px;
+}
+section:nth-child(2) > div > div > button img {
+  width: 30px;
+}
+section:nth-child(2) > div > div > button {
+  background-color: transparent;
+  border: none;
+}
+section:nth-child(2) > div > div > button:hover {
+  cursor: pointer;
+}
+
+section:nth-child(3) {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(32, 32, 32, 0.3);
+}
+#address-closearea {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(32, 32, 32, 0.3);
+}
+#address-closearea:hover {
+  cursor: pointer;
+}
+section:nth-child(3) > div {
+  display: flex;
+  width: 45vw;
+  height: 25vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 30vh;
+  left: 25vw;
+  padding: 7.5vh 2.5vw;
+  background: rgba(217, 217, 217, 0.22);
+  backdrop-filter: blur(49.686px);
+}
+section:nth-child(3) > div > h4 {
+  line-height: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+section:nth-child(3) > div > input {
+  border: #ffffff70 1px solid;
+  border-radius: 5px;
+  width: calc(100% - 20px);
+  height: 30px;
+  background-color: transparent;
+  font-size: 24px;
+  padding: 10px;
+  font-family: "Alice";
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+section:nth-child(3) > div > input:focus {
+  outline: 0.5px solid #ffffff;
+}
+section:nth-child(3) button {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 250px;
+  height: 70px;
+  padding: 0 40px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  font-size: 24px;
+  font-family: "Alice";
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+section:nth-child(3) button:hover {
+  background-color: #ffffff35;
+  transition: ease-in 300ms;
+  cursor: pointer;
+}
+section:nth-child(3) button:active {
+  background-color: #ffffff70;
+  transition: unset;
+}
+section:nth-child(3) button img {
+  width: 30px;
+}
+.display-flex {
+  display: flex !important;
+}
